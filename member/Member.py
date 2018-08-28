@@ -16,8 +16,10 @@ class Member:
         self.city = None
         self.csv = csv
         self.email = None
+        self.event = None
         self.first_name = None
         self.last_name = None
+        self.state = None
         self.tags = []
         self.unaffiliated = None
         self.zip_code = None
@@ -54,6 +56,8 @@ class Member:
             'email': 'email',
             'zip_code': 'zip_code',
             'can2_user_city': 'city',
+            'can2_state_abbreviated': 'state',
+            'Event': 'event'
         }
 
         for (csv_k, obj_k) in map.items():

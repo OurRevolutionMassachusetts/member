@@ -9,15 +9,12 @@ def main():
     data = csv.DictReader(open(file, 'U'))
     members = [Member(csv=row) for row in data]
 
-    report_unaffiliated(members=members)
+    #report_unaffiliated(members=members)
 
     #mysteries = [m for m in members if m.affiliate is None and m.unaffiliated is None and m.city is None and m.zip_code is None]
     #print(len(mysteries))
 
     #print(*([m.zip_code for m in members if m.city is None and m.zip_code is not None]), sep="\n")
-
-
-
 
 def report_unaffiliated(members):
     unaffiliated = {}
